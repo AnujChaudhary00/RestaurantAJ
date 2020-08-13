@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>AJ</title>
+ 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+ 	<script src="Jq.js"></script>
+ 	<link src="bootstrap.min.css">
+ 	<link rel="stylesheet" type="text/css" href="RestaurantStyle.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+ 
+<header>
+	<nav>
+
+		<i class="fa fa-bars fa-2x"  id="bar" style="margin:15px; cursor: pointer; z-index: 99;" onclick="openNav()"></i>
+		<ul>
+			<li><a href="Restaurant.html">HOME</a></li>
+			<li><a href="Menu.html">MENU</a></li>
+			<li><a href="Recipe.html">RECIPES</a></li>
+			<li><a href="Opening.html">OPENING</a></li>
+			<li><a href="ContactRestaurant.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	<p>AJ's</p>
+</header>
+
+
+<div id="overlay"></div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><img src="https://img.icons8.com/cotton/64/000000/table.png"/>Book a Table</a>
+    <a href="Admission.html"><img src="https://img.icons8.com/color/48/000000/food.png"/>Menu Card</a>
+    <a href="AboutUs.html"><img src="https://img.icons8.com/color/48/000000/bill.png"/>Know your Order</a>
+    <a href="ImageGallery.html"><img src="https://img.icons8.com/plasticine/100/000000/check.png"/>Food Quality</a>
+    <a href="ContactUs.html"><img src="https://img.icons8.com/dotty/80/000000/cook-male.png"/>Staff</a>
+    <a><img src="https://img.icons8.com/fluent/48/000000/home.png"/>Home Delivery</a>
+    <a><img src="https://img.icons8.com/plasticine/100/000000/best-seller.png"/>Premium Subscription</a>
+
+</div>
+
+<div class="MainContent">
+	<div class="CardBody">
+		<div class="Image">
+			<img src="FoodyAtAj.jpg">
+		</div>
+		<div class="CardContent">
+			<h2 style="text-align: center;">Foody At AJ's</h2>
+			<p>Pasta (US: /ˈpɑːstə/, UK: /ˈpæstə/; Italian pronunciation: [ˈpasta]) is the Italian designation or name given to a type of starchy noodle or dumpling food or dish typically made from grain flour, commonly wheat, mixed into a paste or dough, usually with water or eggs, and formed or cut into sheets or other shapes. It is usually cooked by boiling, baking or frying. Rice flour, or legumes such as beans or lentils, are sometimes used in place of wheat flour to yield a different flavour and texture, or as a gluten-free alternative. Pasta is a staple food ingredient of Italian cuisine.[1][2]
+
+Pastas are divided into two broad categories: dried (pasta secca) and fresh (pasta fresca). Most dried pasta is produced commercially via an extrusion process, although it can be produced at home. Fresh pasta is traditionally produced by hand, sometimes with the aid of simple machines.[3] Fresh pastas available in grocery stores are produced commercially by large-scale machines.First, let me start of by saying that I am not a foodie. I’m just a guy who likes to try new restaurants and foods. I have noticed a problem in the quality of recommendations I have heard or read from people calling themselves foodies. We need to raise the standards of what is deserving of the title of Foodie. For example, I want a foodie to give me a tip about where I can find the freshest and most favorable pad thai, not that they think P.F. Chang’s is “awesome”. Before calling yourself a foodie, I think there are a few things you should consider.
+
+Just like everyone with a digital camera thinks they are a photographer, everyone who likes to eat seems to call themselves a foodie. I’m sorry, but just because you like to eat, doesn’t mean you are a foodie – it probably means you need to go to the gym.</p>
+		</div>
+	</div>
+</div>
+ </body>
+ </html>
+
+ <script type="text/javascript">
+ 	$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');  
+            }
+      })
+ </script>
+
+
+ <script>
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});
+
+
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "280px";
+document.getElementById("overlay").style.display = "block";
+  
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("overlay").style.display = "none";
+}
+
+</script>

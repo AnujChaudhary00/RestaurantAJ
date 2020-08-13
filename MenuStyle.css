@@ -1,0 +1,69 @@
+ 
+
+header
+ {
+ 	width: 100%;
+ 	height: 200px;
+ 	background: url("HeaderImage.jpg") no-repeat 50% 50%;
+ }
+
+ header>p
+ {
+ 	z-index: 2;
+ 	font-size: 80px;
+ 	color:black ;
+ 	position: absolute;
+ 	right: 40%;
+ 	top: 20px;
+ 	font-family: arial;
+ }
+
+ .MenuCards
+ {
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 30px;
+ 	display: inline-flex;
+ }
+
+ .Card
+ {
+ 	background-color: #F7BF0E;
+ 	background-size:cover; 
+ 	margin: 10px;
+ 	box-shadow: 2px 2px 15px grey;
+ 	width: 100%;
+ }
+ .Card li
+ {
+ 	color:black;
+ 	font-weight: bold;
+ }
+
+ .cardTitle
+ {
+ 	text-align: center;
+ 	font-family: "Comic Sans MS", "Comic Sans", cursive;
+ 	color: black
+ }
+
+ .Card > button
+ {
+ 	margin-left:40%;
+ 	margin-bottom:5%;
+ 	cursor: pointer; 
+ 	text-align: center;
+ 	background-color: black;
+ 	color: #F7BF0E;
+ 	border-radius: 5px;
+ 	padding: 5px;
+ }
+
+ .Card:hover
+ {
+ 	transform: scale(1.1);
+ }
+ .Card button:hover
+ {
+ 	transform: scale(1.5);
+ }
