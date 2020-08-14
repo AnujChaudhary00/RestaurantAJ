@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Registration Form</title>
+ 	<style type="text/css">
+ 		body
+ 		{
+ 			background:url("RegistrationBackground.jpg");
+ 			background-size: cover;
+ 			overflow-x: hidden;
+ 		}
+ 		h1
+ 		{
+ 			text-align: center;
+ 			font-family: arial;
+ 		}
+ 		.RegBox
+ 		{
+ 			
+ 			position: relative;
+ 			left: 25%;
+ 		}
+
+ .Container:after
+ {
+ 	content: '';
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background:white;
+ 	background-size: cover;
+ 	z-index: -1;
+ 	filter: blur(100px);
+ }
+ table {
+  border-collapse:separate; 
+  border-spacing: 0 .5em;
+}
+input
+{
+	border:.5px solid #11B7B9;
+}
+textarea
+{
+border:.5px solid #11B7B9;	
+}
+
+input:hover
+{
+	transform: scale(1.09)
+}
+td
+{
+	width: 200px;
+	height: 25px;
+}
+.head span
+{
+	color:red;
+}
+
+
+ 	</style>
+ </head>
+ <body>
+	 	<div class="head">
+	      <h2 style="position: absolute; top: 10px; left: 20px; font-weight: bold;">rediff.<span>com</span></h2>
+	      <h1>Registration</h1>
+	    </div>
+ <hr>
+ <div class="Container">
+ <div class="RegBox">
+ <form action="pop()">
+ 		<table border="0">
+ 			<div id="row">
+ 			<tr>
+ 				<td>Name</td>
+ 				<td><input type="text" placeholder="Enter Your Name"></td>
+ 			</tr>
+ 			</div>
+ 			<div id="row">
+ 			<tr>
+ 				<td>Gender</td>
+ 				<td><input  type="radio"  name="gender" />Male
+ 				<input  type="radio"  name="gender" /> Female</td>
+ 			</tr>
+ 			</div>
+ 			<div id="row">
+ 			<tr>
+ 				<td>Date Of Birth</td>
+ 				<td><input type="Date" placeholder="Enter Date"></td>
+ 			</tr>
+ 			</div>
+ 			<div id="row">
+ 			<tr>
+ 				<td>Qualificaation</td>
+ 				<td>
+ 					<select>
+ 						<option>-selecte</option>
+ 						<option>B.Tech</option>
+ 						<option>B.C.A</option>
+ 						<option>B.B.A</option>
+ 						<option>B.Sc</option>
+ 						<option>Master</option>
+ 						<option>PHD</option>
+ 					</select>
+ 				</td>
+ 			</tr>
+ 			</div>
+ 			<div id="row">
+ 			<tr>
+ 				<td>Specialization</td>
+ 				<td>
+ 					<input type="checkbox" name="spec">Programming<br/>
+ 					<input type="checkbox" name="spec">Testing<br/>
+ 					<input type="checkbox" name="spec">Designing<br/>
+ 				</td>
+ 			</tr>
+ 			</div>
+ 			<div id="row">
+ 			<tr>
+ 				<td>Phone No.</td>
+ 				<td><input  id="Mydate" type="text" type="number" placeholder=" Enter your phone no." min="10"  max="10" /></td>
+ 			</tr>
+ 			<tr>
+ 				<td>Password</td>
+ 				<td><input type="Password" name="" placeholder="Create Password"></td>
+ 			</tr>
+ 			<tr>
+ 				<td> Confirm Password</td>
+ 				<td><input type="Password" name="" placeholder="Confirm Password"></td>
+ 			</tr>
+ 			<tr>
+ 				<td>Please verify</td>
+ 				<td><img src="captcha.jpg" width="50%"></td>
+ 			</tr>
+ 			<tr>
+ 				<td></td>
+ 				<td><input type="text" name=""></td>
+ 			</tr>
+
+ 			<tr>
+ 				<td>Address</td>
+ 				<td><textarea rows="5"></textarea></td>
+ 			</tr>
+ 			<tr>
+ 				<td colspan="2" align="center"><input type="submit"/></td>
+ 			</tr>
+ 			</div>
+ 		</table>
+</div>
+ </form>
+ </div>
+ </body>
+ </html>
+ <script>
+ 	$("#Mydate").datepicker({
+            numberOfMonths: 1,
+            changeYear: true
+        });
+ </script>
