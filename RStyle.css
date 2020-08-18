@@ -8,7 +8,7 @@
  	margin: 0px;
  	padding: 0px;
  	overflow-x: hidden;
-  background-color: black;
+
  }
 
  header
@@ -621,49 +621,4 @@ width: 40px;
 
 
 }
-
-
-section
-{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: blue;
-}
-section .CONTENT
-{
-  max-width: 80%;
-}
-
-section .CONTENT h2
-{
-  position: relative;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  font-size: 3em;
-  transition: 2s;
-  transform-origin: right;
-  transform:scaleX(1); 
-}
-
-
-section .CONTENT h3
-{
-  position: relative;
-  margin: 5px 0 0;
-  padding: 0;
-  display: inline-block;
-  font-size: 2em;
-  transition: 2s;
-  transform-origin: right;
-  transform:scaleX(0); 
-}
-
-
-
 
