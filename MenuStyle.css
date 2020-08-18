@@ -66,10 +66,12 @@ header
  .Card:hover
  {
  	transform: scale(1.1);
+	 transition:.8s;
  }
  .Card button:hover
  {
  	transform: scale(1.5);
+	 
  }
 
  .Card img
